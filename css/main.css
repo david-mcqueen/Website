@@ -1,0 +1,411 @@
+
+/* Importing Amaranth Font for menu text */
+@import url(http://fonts.googleapis.com/css?family=Amaranth);
+
+@font-face {
+    font-family: DM-Porter;
+    src: url(PorterBold.ttf);
+}
+
+/*
+This will apply to each of the matched elements.
+If they are matched more than once, the transition will apply more than once.*/
+
+.header,
+.menuItems li,
+.logo,
+.continueToContent,
+.logoEmail,
+.icon-background,
+.contactIcon{
+    transition: all 0.8s;
+    -moz-transition: all 0.8s; /* Firefox 4 */
+    -webkit-transition: all 0.8s; /* Safari and Chrome */
+    -o-transition: all 0.8s; /* Opera */
+}
+
+
+.MSCertImage{
+    height: 50px;
+    padding-top:10px;
+}
+
+.logoLarge,
+.logoSmall {
+    font-family: DM-Porter;
+}
+
+nav ul{
+    list-style-type: none;
+    float: right;
+}
+
+nav li{
+    display: inline;
+    float: left;
+}
+
+div.logo{
+    line-break: strict;
+    float: left;
+    font-size: 5em;
+    margin: auto;
+    /*margin-top: 20%;*/
+    width: 100%;
+    color:#ffffff;
+    text-align: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.logoEmail{
+    font-size: 20px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.logoEmail a{
+    text-decoration: none;
+    color:#2191FF;
+}
+.logoEmail a:hover{
+    color: #ffffff;
+}
+
+nav{
+    width: 960px;
+    margin: 0 auto;
+}
+
+section.stretch{
+    float: left;
+    height: auto;
+    width: 100%;
+}
+
+header{
+    background: #000000;
+    border-bottom: 1px solid #aaaaaa;
+    float: left;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.menuItems a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Amaranth', sans-serif;
+    text-transform: uppercase;
+}
+
+.menuItems a.active, header a:hover{
+    color: #2191FF;
+}
+
+header li{
+    margin-right: 30px;
+}
+
+/* Sizes for the bigger menu */
+header.large{
+    height: 100%;
+}
+
+header.large li{
+    margin-top: 45px;
+
+}
+
+/* Sizes for the smaller menu */
+header.small{
+    height: 50px;
+}
+
+header.small .logo{
+    font-size: 2em;
+    margin-top: 5px;
+    margin-left: 5px;
+
+    top: 0.5%;
+    left: -33%;
+    /* bring your own prefixes */
+    transform: translate(0%, 0%);
+}
+
+header.small .logoEmail{
+    font-size: 0px;
+    margin: auto;
+    width: 50%;
+}
+
+header.small li{
+    margin-top: 17px;
+}
+
+header.small .menuItems li{
+    margin-top: 17px;
+}
+
+header.small .menuItems{
+    font-size: 0.85em;
+}
+
+.menuItems{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.sectionArea {
+    width: 80%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    margin-left: 10%;
+}
+
+.sectionContent{
+    padding: 20px;
+}
+
+.sectionLink:last-of-type{
+    margin-bottom: 50px;
+}
+
+.centerItem{
+  width: 100%;
+  text-align: center;
+  left: 50%;
+}
+
+
+section.stretch .sectionTitle{
+    font-family: 'Amaranth', sans-serif;
+
+    color:#2191FF;
+    text-align: center;
+    position: relative;
+}
+
+
+.sectionLink{
+    padding-top:40px;
+    margin-top:40px;
+}
+
+.otherSection{
+    margin-top: 50px;
+}
+
+section.stretch p.bottom{
+    top: 100%;
+}
+
+
+.continueToContent{
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+}
+
+header.small .continueToContent{
+    top: 0.5%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(0%, 0%);
+    font-size: 0;
+}
+
+.unstyled{
+    text-decoration: none;
+    color:inherit;
+}
+
+.unstyled:hover{
+    color: #2191FF;
+}
+
+
+
+
+/*Buttons*/
+
+.btn,
+a.btn {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    font-family: 'Montserrat', arial, sans-serif;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+.btn .fa,
+a.btn .fa {
+    margin-right: 5px;
+}
+.btn:focus,
+a.btn:focus {
+    color: #fff;
+}
+a.btn-cta-secondary,
+.btn-cta-secondary {
+    background: #2191FF;
+    border: 1px solid #2191FF;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a.btn-cta-secondary:hover,
+.btn-cta-secondary:hover {
+    background: #FFFFFF;
+    border: 1px solid #2191FF;
+    color: #2191FF;
+}
+
+
+/*Background*/
+
+
+body {
+    background:#ffffff;
+    z-index:-5;
+}
+
+#lines {
+    background-size: 40px 40px;
+    background-image:
+    repeating-linear-gradient(
+        /*Horizontal*/
+            0deg,
+            rgba(255, 0, 0, 0.25),
+            rgba(255, 0, 0, 0.25) 1px,
+            transparent 1px,
+            transparent 40px
+    ),
+    repeating-linear-gradient(
+        /*Vertical*/
+            -90deg,
+            rgba(33, 145, 255, 0.25),
+            rgba(33, 145, 255, 0.25) 1px,
+            transparent 1px,
+            transparent 40px
+    );
+
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-4;
+}
+
+
+
+/*Chevrons*/
+
+.chevron::before {
+    /*http://codepen.io/jonneal/pen/kptBs*/
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    border-color: #2191FF;
+    content: '';
+    display: inline-block;
+    height: 0.45em;
+    left: 0.15em;
+    position: relative;
+    top: 0.15em;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0.45em;
+}
+
+.chevron.bottom:before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.chevron:hover:before{
+    border-color: #ffffff;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.icon-background {
+    color: #2191FF;
+}
+.contactIcon{
+    color: #ffffff;
+}
+
+.contactIcons a:hover i.icon-symbol{
+    color: #2191FF;
+}
+
+.contactIcons a:hover i.icon-background {
+    color: #ffffff;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.logoSmall{
+    display: none;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 0px){
+    header.small .logoLarge {
+        display: none;
+    }
+    header.small .logoSmall {
+        display: inherit;
+    }
+
+    header.small .menuItems{
+        font-size:0.85em;
+    }
+
+    header.small .menuItems li{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    header.small .logoLarge {
+        display: inherit;
+    }
+    header.small .logoSmall {
+        display: none;
+    }
+
+    header.small .menuItems{
+        font-size:1em;
+    }
+
+    header.small .menuItems li{
+        margin-right: 30px;
+    }
+
+}
