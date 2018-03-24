@@ -1,6 +1,6 @@
 
 /* Importing Amaranth Font for menu text */
-@import url(http://fonts.googleapis.com/css?family=Amaranth);
+@import url(https://fonts.googleapis.com/css?family=Amaranth);
 
 @font-face {
     font-family: DM-Porter;
@@ -368,15 +368,50 @@ p {
     text-align: center;
 }
 
-.logoSmall{
+.logoSmall,
+.logoMini{
     display: none;
     text-align: center;
 }
 
-
-
 @media screen and (min-width: 0px){
-    header.small .logoLarge {
+    header.small .logoLarge,
+    header.small .logoSmall,
+    header.small .menuItems li.optional-menu-item{
+        display: none;
+    }
+    header.small .logoMini {
+        display: inherit;
+    }
+    header.small .menuItems{
+        font-size:0.85em;
+    }
+
+    header.small .menuItems li{
+        margin-right: 15px;
+    }
+}
+@media screen and (min-width: 0px){
+    header .menuItems li.optional-menu-item{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 423px){
+    header .menuItems li.optional-menu-item{
+        display: inherit;
+    }
+}
+
+@media screen and (min-width: 410px){
+    header.small .menuItems li.optional-menu-item{
+        display: inherit;
+    }
+}
+
+@media screen and (min-width: 480px){
+    header.small .logoLarge,
+    header.small .logoMini {
         display: none;
     }
     header.small .logoSmall {
@@ -392,11 +427,14 @@ p {
     }
 }
 
-@media screen and (min-width: 600px){
-    header.small .logoLarge {
+
+@media screen and (min-width: 700px){
+    header.small .logoLarge,
+    header.small .menuItems li.optional-menu-item {
         display: inherit;
     }
-    header.small .logoSmall {
+    header.small .logoSmall,
+    header.small .logoMini {
         display: none;
     }
 
